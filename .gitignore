@@ -16,6 +16,8 @@ cabal.sandbox.config
 /vendor/
 .shelly/
 tarballs/
+.updo
+updo
 
 # useful when mounting into docker
 .cabal
