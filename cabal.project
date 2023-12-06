@@ -1,15 +1,25 @@
+import: ./project-stackage/lts-18.28.config
+
+-- We have 14 packages.
 packages:
-  yesod-core
-  yesod-static
-  yesod-persistent
-  yesod-newsfeed
-  yesod-form
-  yesod-form-multi
-  yesod-auth
-  yesod-auth-oauth
-  yesod-sitemap
-  yesod-test
-  yesod-bin
-  yesod
-  yesod-eventsource
-  yesod-websockets
+    yesod
+  , yesod-auth
+  , yesod-auth-oauth
+  , yesod-bin
+  , yesod-core
+  , yesod-eventsource
+  , yesod-form
+  , yesod-form-multi
+  , yesod-newsfeed
+  , yesod-persistent
+  , yesod-sitemap
+  , yesod-static
+  , yesod-test
+  , yesod-websockets
+
+-- Version equality constraints.
+constraints:
+    attoparsec-aeson ==2.1.0.0
+program-options
+  ghc-options: -fhide-source-paths
+
